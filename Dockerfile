@@ -1,6 +1,6 @@
 FROM node:latest
 RUN apt-get update && \
-    apt-get install android-sdk &&\
+    apt-get -y install android-sdk &&\
     ulimit -c unlimited &&\
     npm install -g firebase-tools
 ENV ANDROID_SDK_ROOT=/usr/lib/android-sdk
